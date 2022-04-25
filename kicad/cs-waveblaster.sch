@@ -1,0 +1,1166 @@
+EESchema Schematic File Version 4
+LIBS:cs-waveblaster-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L cs-waveblaster-rescue:CS9236-CL U1
+U 1 1 5B9928A7
+P 1650 5700
+F 0 "U1" H 1800 5400 60  0000 C CNN
+F 1 "CS9236-CL" H 1700 6150 60  0000 C CNN
+F 2 "Sockets:PLCC28" H 3300 6400 60  0001 C CNN
+F 3 "" H 3300 6400 60  0001 C CNN
+	1    1650 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L cs-waveblaster-rescue:CS4333 U2
+U 1 1 5B9928E6
+P 4850 5000
+F 0 "U2" H 5200 4550 60  0000 C CNN
+F 1 "CS4333" H 4550 5550 60  0000 C CNN
+F 2 "SMD_Packages:SOIC-8-N" H 4800 5050 60  0001 C CNN
+F 3 "" H 4800 5050 60  0001 C CNN
+	1    4850 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L cs-waveblaster-rescue:GNDD #PWR01
+U 1 1 5B992D45
+P 1650 7600
+F 0 "#PWR01" H 1650 7350 50  0001 C CNN
+F 1 "GNDD" H 1650 7450 50  0000 C CNN
+F 2 "" H 1650 7600 50  0000 C CNN
+F 3 "" H 1650 7600 50  0000 C CNN
+	1    1650 7600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 7400 1350 7500
+Wire Wire Line
+	1350 7500 1650 7500
+Wire Wire Line
+	1950 7500 1950 7400
+Connection ~ 1650 7500
+Wire Wire Line
+	1650 7500 1650 7600
+Wire Wire Line
+	1400 4200 1400 3800
+Wire Wire Line
+	1100 3800 1400 3800
+Wire Wire Line
+	2000 3800 2000 4200
+$Comp
+L cs-waveblaster-rescue:+3.3V #PWR02
+U 1 1 5B992DF3
+P 1700 3700
+F 0 "#PWR02" H 1700 3550 50  0001 C CNN
+F 1 "+3.3V" H 1700 3840 50  0000 C CNN
+F 2 "" H 1700 3700 50  0000 C CNN
+F 3 "" H 1700 3700 50  0000 C CNN
+	1    1700 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L cs-waveblaster-rescue:GNDD #PWR03
+U 1 1 5B992E1B
+P 1100 4200
+F 0 "#PWR03" H 1100 3950 50  0001 C CNN
+F 1 "GNDD" H 1100 4050 50  0000 C CNN
+F 2 "" H 1100 4200 50  0000 C CNN
+F 3 "" H 1100 4200 50  0000 C CNN
+	1    1100 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L cs-waveblaster-rescue:GNDD #PWR04
+U 1 1 5B992E3E
+P 2250 4200
+F 0 "#PWR04" H 2250 3950 50  0001 C CNN
+F 1 "GNDD" H 2250 4050 50  0000 C CNN
+F 2 "" H 2250 4200 50  0000 C CNN
+F 3 "" H 2250 4200 50  0000 C CNN
+	1    2250 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L cs-waveblaster-rescue:C C1
+U 1 1 5B992E53
+P 1100 4000
+F 0 "C1" H 1125 4100 50  0000 L CNN
+F 1 "100n" H 1125 3900 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Disc_D3_P2.5" H 1138 3850 50  0001 C CNN
+F 3 "" H 1100 4000 50  0000 C CNN
+	1    1100 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L cs-waveblaster-rescue:C C2
+U 1 1 5B992EED
+P 2250 4000
+F 0 "C2" H 2275 4100 50  0000 L CNN
+F 1 "100n" H 2275 3900 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Disc_D3_P2.5" H 2288 3850 50  0001 C CNN
+F 3 "" H 2250 4000 50  0000 C CNN
+	1    2250 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 4150 2250 4200
+Wire Wire Line
+	1100 4150 1100 4200
+Wire Wire Line
+	1700 3800 1700 3700
+Connection ~ 1700 3800
+Wire Wire Line
+	1100 3800 1100 3850
+Connection ~ 1400 3800
+Wire Wire Line
+	2250 3800 2250 3850
+Connection ~ 2000 3800
+Text GLabel 2900 7500 2    60   Input ~ 0
+MIDI_IN
+$Comp
+L cs-waveblaster-rescue:GNDD #PWR05
+U 1 1 5B993231
+P 2750 6100
+F 0 "#PWR05" H 2750 5850 50  0001 C CNN
+F 1 "GNDD" H 2750 5950 50  0000 C CNN
+F 2 "" H 2750 6100 50  0000 C CNN
+F 3 "" H 2750 6100 50  0000 C CNN
+	1    2750 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 6050 2750 6050
+Wire Wire Line
+	2750 5900 2750 6050
+Wire Wire Line
+	2650 5900 2750 5900
+Connection ~ 2750 6050
+NoConn ~ 2650 5750
+Text Notes 2750 5850 0    60   ~ 0
+Force use\nof MCLK5I
+Wire Wire Line
+	2650 6350 2750 6350
+Wire Wire Line
+	2750 6350 2750 6500
+Wire Wire Line
+	2750 6500 2650 6500
+Connection ~ 2750 6350
+$Comp
+L cs-waveblaster-rescue:+3.3V #PWR06
+U 1 1 5B993512
+P 3600 5950
+F 0 "#PWR06" H 3600 5800 50  0001 C CNN
+F 1 "+3.3V" H 3600 6090 50  0000 C CNN
+F 2 "" H 3600 5950 50  0000 C CNN
+F 3 "" H 3600 5950 50  0000 C CNN
+	1    3600 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L cs-waveblaster-rescue:GNDD #PWR07
+U 1 1 5B993531
+P 3600 6750
+F 0 "#PWR07" H 3600 6500 50  0001 C CNN
+F 1 "GNDD" H 3600 6600 50  0000 C CNN
+F 2 "" H 3600 6750 50  0000 C CNN
+F 3 "" H 3600 6750 50  0000 C CNN
+	1    3600 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L cs-waveblaster-rescue:C C7
+U 1 1 5B9935C9
+P 3600 6550
+F 0 "C7" H 3625 6650 50  0000 L CNN
+F 1 "100n" H 3625 6450 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Disc_D3_P2.5" H 3638 6400 50  0001 C CNN
+F 3 "" H 3600 6550 50  0000 C CNN
+	1    3600 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L cs-waveblaster-rescue:R R1
+U 1 1 5B993780
+P 3600 6150
+F 0 "R1" V 3680 6150 50  0000 C CNN
+F 1 "10K" V 3600 6150 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 3530 6150 50  0001 C CNN
+F 3 "" H 3600 6150 50  0000 C CNN
+	1    3600 6150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 6300 3600 6350
+Connection ~ 3600 6350
+Wire Wire Line
+	3600 6700 3600 6750
+Text Notes 3100 6550 0    60   ~ 0
+RC Reset\nCircuit
+Wire Wire Line
+	2650 5300 3500 5300
+Wire Wire Line
+	3500 5300 3500 4700
+Wire Wire Line
+	3500 4700 4200 4700
+Wire Wire Line
+	2650 4850 2750 4850
+Wire Wire Line
+	2750 4850 2750 5000
+Wire Wire Line
+	2750 5000 4200 5000
+Wire Wire Line
+	4200 4850 4100 4850
+Wire Wire Line
+	4100 4850 4100 4200
+Wire Wire Line
+	4100 4200 4400 4200
+$Comp
+L cs-waveblaster-rescue:R R3
+U 1 1 5B9939F8
+P 4550 4200
+F 0 "R3" V 4630 4200 50  0000 C CNN
+F 1 "10K" V 4550 4200 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 4480 4200 50  0001 C CNN
+F 3 "" H 4550 4200 50  0000 C CNN
+	1    4550 4200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4850 3650 4850 3750
+Wire Wire Line
+	4700 4200 4850 4200
+Connection ~ 4850 4200
+$Comp
+L cs-waveblaster-rescue:+5VA #PWR08
+U 1 1 5B993B36
+P 4850 3650
+F 0 "#PWR08" H 4850 3500 50  0001 C CNN
+F 1 "+5VA" H 4850 3790 50  0000 C CNN
+F 2 "" H 4850 3650 50  0000 C CNN
+F 3 "" H 4850 3650 50  0000 C CNN
+	1    4850 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L cs-waveblaster-rescue:GNDA #PWR09
+U 1 1 5B993C94
+P 4850 5600
+F 0 "#PWR09" H 4850 5350 50  0001 C CNN
+F 1 "GNDA" H 4850 5450 50  0000 C CNN
+F 2 "" H 4850 5600 50  0000 C CNN
+F 3 "" H 4850 5600 50  0000 C CNN
+	1    4850 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 5550 4850 5600
+$Comp
+L cs-waveblaster-rescue:R R4
+U 1 1 5B993E26
+P 6750 4700
+F 0 "R4" V 6830 4700 50  0000 C CNN
+F 1 "2K4" V 6750 4700 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 6680 4700 50  0001 C CNN
+F 3 "" H 6750 4700 50  0000 C CNN
+	1    6750 4700
+	0    1    1    0   
+$EndComp
+$Comp
+L cs-waveblaster-rescue:R R5
+U 1 1 5B993EAA
+P 6750 5550
+F 0 "R5" V 6830 5550 50  0000 C CNN
+F 1 "2K4" V 6750 5550 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 6680 5550 50  0001 C CNN
+F 3 "" H 6750 5550 50  0000 C CNN
+	1    6750 5550
+	0    1    1    0   
+$EndComp
+$Comp
+L cs-waveblaster-rescue:C C5
+U 1 1 5B993EFE
+P 6950 4900
+F 0 "C5" H 6975 5000 50  0000 L CNN
+F 1 "750p" H 6975 4800 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Disc_D3_P2.5" H 6988 4750 50  0001 C CNN
+F 3 "" H 6950 4900 50  0000 C CNN
+	1    6950 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L cs-waveblaster-rescue:GNDA #PWR010
+U 1 1 5B99424D
+P 6950 5100
+F 0 "#PWR010" H 6950 4850 50  0001 C CNN
+F 1 "GNDA" H 6950 4950 50  0000 C CNN
+F 2 "" H 6950 5100 50  0000 C CNN
+F 3 "" H 6950 5100 50  0000 C CNN
+	1    6950 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L cs-waveblaster-rescue:C C6
+U 1 1 5B994276
+P 6950 5750
+F 0 "C6" H 6975 5850 50  0000 L CNN
+F 1 "750p" H 6975 5650 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Disc_D3_P2.5" H 6988 5600 50  0001 C CNN
+F 3 "" H 6950 5750 50  0000 C CNN
+	1    6950 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L cs-waveblaster-rescue:GNDA #PWR011
+U 1 1 5B994348
+P 6950 5950
+F 0 "#PWR011" H 6950 5700 50  0001 C CNN
+F 1 "GNDA" H 6950 5800 50  0000 C CNN
+F 2 "" H 6950 5950 50  0000 C CNN
+F 3 "" H 6950 5950 50  0000 C CNN
+	1    6950 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 5100 6950 5050
+Wire Wire Line
+	6950 4750 6950 4700
+Wire Wire Line
+	6900 4700 6950 4700
+Wire Wire Line
+	6900 5550 6950 5550
+Wire Wire Line
+	6950 5550 6950 5600
+Wire Wire Line
+	6950 5950 6950 5900
+$Comp
+L cs-waveblaster-rescue:C C3
+U 1 1 5B9947C9
+P 5150 3950
+F 0 "C3" H 5175 4050 50  0000 L CNN
+F 1 "100n" H 5175 3850 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Disc_D3_P2.5" H 5188 3800 50  0001 C CNN
+F 3 "" H 5150 3950 50  0000 C CNN
+	1    5150 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L cs-waveblaster-rescue:GNDA #PWR012
+U 1 1 5B99484F
+P 5150 4150
+F 0 "#PWR012" H 5150 3900 50  0001 C CNN
+F 1 "GNDA" H 5150 4000 50  0000 C CNN
+F 2 "" H 5150 4150 50  0000 C CNN
+F 3 "" H 5150 4150 50  0000 C CNN
+	1    5150 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L cs-waveblaster-rescue:GNDA #PWR013
+U 1 1 5B99487E
+P 5550 4150
+F 0 "#PWR013" H 5550 3900 50  0001 C CNN
+F 1 "GNDA" H 5550 4000 50  0000 C CNN
+F 2 "" H 5550 4150 50  0000 C CNN
+F 3 "" H 5550 4150 50  0000 C CNN
+	1    5550 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 3800 5150 3750
+Wire Wire Line
+	4850 3750 5150 3750
+Connection ~ 4850 3750
+$Comp
+L cs-waveblaster-rescue:CP1 C4
+U 1 1 5B9949E3
+P 5550 3950
+F 0 "C4" H 5575 4050 50  0000 L CNN
+F 1 "10u" H 5575 3850 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Radial_D5_L6_P2.5" H 5550 3950 50  0001 C CNN
+F 3 "" H 5550 3950 50  0000 C CNN
+	1    5550 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 3750 5550 3800
+Connection ~ 5150 3750
+Wire Wire Line
+	5500 5150 5550 5150
+Wire Wire Line
+	5550 5150 5550 5550
+Connection ~ 6950 4700
+Connection ~ 6950 5550
+Text GLabel 7400 4700 2    60   Input ~ 0
+AUDIO_OUT_LEFT
+Text GLabel 7400 5550 2    60   Input ~ 0
+AUDIO_OUT_RIGHT
+Text Notes 8200 5000 0    60   ~ 0
+1
+Text Notes 9100 5100 0    60   ~ 0
+= 751.8657 pico Fahrad
+Text Notes 7400 7500 0    60   ~ 0
+CS9236 BASED WAVEBLASTER BOARD
+Text Notes 7400 6950 0    60   ~ 0
+by Ivo van Poorten\n<ivopvp@gmail.com>\n
+Text Notes 8200 7650 0    60   ~ 0
+2018-09-12
+Text Notes 10650 7650 0    60   ~ 0
+A
+Text Notes 7500 5100 0    60   ~ 0
+2*pi * 2400 ohm * 44100 Hz *2
+Wire Notes Line
+	7500 5000 9000 5000
+$Comp
+L cs-waveblaster-rescue:Quartz X1
+U 1 1 5B9994B1
+P 1000 2750
+F 0 "X1" H 1250 3300 60  0000 C CNN
+F 1 "16.9344 MHz" H 1500 3150 60  0000 C CNN
+F 2 "Oscillators:KXO-200_LargePads" H 1050 2750 60  0001 C CNN
+F 3 "" H 1050 2750 60  0001 C CNN
+	1    1000 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1000 2250 1000 2300
+$Comp
+L cs-waveblaster-rescue:GNDD #PWR014
+U 1 1 5B99A24E
+P 1000 3350
+F 0 "#PWR014" H 1000 3100 50  0001 C CNN
+F 1 "GNDD" H 1000 3200 50  0000 C CNN
+F 2 "" H 1000 3350 50  0000 C CNN
+F 3 "" H 1000 3350 50  0000 C CNN
+	1    1000 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1000 3300 1000 3350
+Wire Wire Line
+	5550 4100 5550 4150
+Wire Wire Line
+	5150 4100 5150 4150
+Wire Wire Line
+	2650 6750 2750 6750
+Wire Wire Line
+	2750 6750 2750 7500
+$Comp
+L cs-waveblaster-rescue:GNDA #PWR015
+U 1 1 5B99D048
+P 3750 1000
+F 0 "#PWR015" H 3750 750 50  0001 C CNN
+F 1 "GNDA" H 3750 850 50  0000 C CNN
+F 2 "" H 3750 1000 50  0000 C CNN
+F 3 "" H 3750 1000 50  0000 C CNN
+	1    3750 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L cs-waveblaster-rescue:GNDD #PWR016
+U 1 1 5B99D078
+P 3150 1000
+F 0 "#PWR016" H 3150 750 50  0001 C CNN
+F 1 "GNDD" H 3150 850 50  0000 C CNN
+F 2 "" H 3150 1000 50  0000 C CNN
+F 3 "" H 3150 1000 50  0000 C CNN
+	1    3150 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L cs-waveblaster-rescue:R R6
+U 1 1 5B99D0C2
+P 3450 850
+F 0 "R6" V 3530 850 50  0000 C CNN
+F 1 "0" V 3450 850 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 3380 850 50  0001 C CNN
+F 3 "" H 3450 850 50  0000 C CNN
+	1    3450 850 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3150 1000 3150 850 
+Wire Wire Line
+	3150 850  3300 850 
+Wire Wire Line
+	3750 1000 3750 850 
+Wire Wire Line
+	3750 850  3600 850 
+$Comp
+L cs-waveblaster-rescue:PWR_FLAG #FLG017
+U 1 1 5B99D538
+P 3750 850
+F 0 "#FLG017" H 3750 945 50  0001 C CNN
+F 1 "PWR_FLAG" H 3750 1030 50  0000 C CNN
+F 2 "" H 3750 850 50  0000 C CNN
+F 3 "" H 3750 850 50  0000 C CNN
+	1    3750 850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L cs-waveblaster-rescue:PWR_FLAG #FLG018
+U 1 1 5B99DD70
+P 3150 850
+F 0 "#FLG018" H 3150 945 50  0001 C CNN
+F 1 "PWR_FLAG" H 3150 1030 50  0000 C CNN
+F 2 "" H 3150 850 50  0000 C CNN
+F 3 "" H 3150 850 50  0000 C CNN
+	1    3150 850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L cs-waveblaster-rescue:+5VA #PWR019
+U 1 1 5B99DE54
+P 4100 800
+F 0 "#PWR019" H 4100 650 50  0001 C CNN
+F 1 "+5VA" H 4100 940 50  0000 C CNN
+F 2 "" H 4100 800 50  0000 C CNN
+F 3 "" H 4100 800 50  0000 C CNN
+	1    4100 800 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 850  4400 900 
+Wire Wire Line
+	4400 900  4100 900 
+Wire Wire Line
+	4100 900  4100 800 
+Wire Wire Line
+	3600 6000 3600 5950
+$Comp
+L cs-waveblaster-rescue:+5V #PWR020
+U 1 1 5B99F09C
+P 3150 1500
+F 0 "#PWR020" H 3150 1350 50  0001 C CNN
+F 1 "+5V" H 3150 1640 50  0000 C CNN
+F 2 "" H 3150 1500 50  0000 C CNN
+F 3 "" H 3150 1500 50  0000 C CNN
+	1    3150 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L cs-waveblaster-rescue:+5VA #PWR021
+U 1 1 5B99F0E3
+P 3750 1500
+F 0 "#PWR021" H 3750 1350 50  0001 C CNN
+F 1 "+5VA" H 3750 1640 50  0000 C CNN
+F 2 "" H 3750 1500 50  0000 C CNN
+F 3 "" H 3750 1500 50  0000 C CNN
+	1    3750 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L cs-waveblaster-rescue:R R7
+U 1 1 5B99F11B
+P 3450 1650
+F 0 "R7" V 3530 1650 50  0000 C CNN
+F 1 "0" V 3450 1650 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 3380 1650 50  0001 C CNN
+F 3 "" H 3450 1650 50  0000 C CNN
+	1    3450 1650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3150 1500 3150 1650
+Wire Wire Line
+	3150 1650 3300 1650
+Wire Wire Line
+	3600 1650 3750 1650
+Wire Wire Line
+	3750 1650 3750 1500
+$Comp
+L cs-waveblaster-rescue:PWR_FLAG #FLG022
+U 1 1 5B9A14D1
+P 1250 1200
+F 0 "#FLG022" H 1250 1295 50  0001 C CNN
+F 1 "PWR_FLAG" H 1250 1380 50  0000 C CNN
+F 2 "" H 1250 1200 50  0000 C CNN
+F 3 "" H 1250 1200 50  0000 C CNN
+	1    1250 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L cs-waveblaster-rescue:PWR_FLAG #FLG023
+U 1 1 5B99DECA
+P 4400 850
+F 0 "#FLG023" H 4400 945 50  0001 C CNN
+F 1 "PWR_FLAG" H 4400 1030 50  0000 C CNN
+F 2 "" H 4400 850 50  0000 C CNN
+F 3 "" H 4400 850 50  0000 C CNN
+	1    4400 850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L cs-waveblaster-rescue:LM1117-3.3V U3
+U 1 1 5B9A1C5B
+P 1900 1400
+F 0 "U3" H 2100 1150 60  0000 C CNN
+F 1 "LM1117-3.3V" H 1900 1750 60  0000 C CNN
+F 2 "TO_SOT_Packages_THT:TO-220_Neutral123_Vertical" H 1850 1400 60  0001 C CNN
+F 3 "" H 1850 1400 60  0001 C CNN
+	1    1900 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L cs-waveblaster-rescue:+5V #PWR024
+U 1 1 5B9A1D87
+P 900 1200
+F 0 "#PWR024" H 900 1050 50  0001 C CNN
+F 1 "+5V" H 900 1340 50  0000 C CNN
+F 2 "" H 900 1200 50  0000 C CNN
+F 3 "" H 900 1200 50  0000 C CNN
+	1    900  1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L cs-waveblaster-rescue:+3.3V #PWR025
+U 1 1 5B9A1DD6
+P 2700 1200
+F 0 "#PWR025" H 2700 1050 50  0001 C CNN
+F 1 "+3.3V" H 2700 1340 50  0000 C CNN
+F 2 "" H 2700 1200 50  0000 C CNN
+F 3 "" H 2700 1200 50  0000 C CNN
+	1    2700 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	900  1200 900  1300
+Wire Wire Line
+	900  1300 1250 1300
+Wire Wire Line
+	2350 1300 2450 1300
+Wire Wire Line
+	2700 1300 2700 1200
+Wire Wire Line
+	1900 1750 1900 1800
+$Comp
+L cs-waveblaster-rescue:GNDD #PWR026
+U 1 1 5B9A1FE7
+P 1900 1850
+F 0 "#PWR026" H 1900 1600 50  0001 C CNN
+F 1 "GNDD" H 1900 1700 50  0000 C CNN
+F 2 "" H 1900 1850 50  0000 C CNN
+F 3 "" H 1900 1850 50  0000 C CNN
+	1    1900 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 1200 1250 1300
+Connection ~ 1250 1300
+$Comp
+L cs-waveblaster-rescue:CP1 C8
+U 1 1 5B9A2675
+P 1250 1550
+F 0 "C8" H 1275 1650 50  0000 L CNN
+F 1 "10u" H 1275 1450 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Radial_D5_L6_P2.5" H 1250 1550 50  0001 C CNN
+F 3 "" H 1250 1550 50  0000 C CNN
+	1    1250 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L cs-waveblaster-rescue:CP1 C9
+U 1 1 5B9A2713
+P 2450 1550
+F 0 "C9" H 2475 1650 50  0000 L CNN
+F 1 "10u" H 2475 1450 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Radial_D5_L6_P2.5" H 2450 1550 50  0001 C CNN
+F 3 "" H 2450 1550 50  0000 C CNN
+	1    2450 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 1700 1250 1800
+Wire Wire Line
+	1250 1800 1900 1800
+Connection ~ 1900 1800
+Wire Wire Line
+	2450 1800 2450 1700
+Wire Wire Line
+	2450 1400 2450 1300
+Connection ~ 2450 1300
+Wire Wire Line
+	2750 7500 2900 7500
+Text Notes 2550 4050 0    118  ~ 24
+MIDI SYNTH
+Text Notes 4300 4000 0    118  ~ 24
+DAC
+Text Notes 1000 800  0    118  ~ 24
+POWER
+Text Notes 1550 2700 0    118  ~ 24
+CLOCK
+Wire Wire Line
+	4150 5150 4200 5150
+Wire Wire Line
+	2650 4700 2750 4700
+Text Notes 1550 3100 0    60   ~ 0
+16934400
+Text Notes 1700 3200 0    60   ~ 0
+384
+Wire Notes Line
+	1550 3100 2000 3100
+Text Notes 2050 3150 0    60   ~ 0
+= 44100 Hz
+$Comp
+L cs-waveblaster-rescue:WAVEBLASTER CON1
+U 1 1 5B9AB02C
+P 8550 2150
+F 0 "CON1" H 8850 1450 61  0000 C CNN
+F 1 "WAVEBLASTER" H 8550 2950 61  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x13" H 8550 2150 118 0001 C CNN
+F 3 "" H 8550 2150 118 0001 C CNN
+	1    8550 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L cs-waveblaster-rescue:+5V #PWR027
+U 1 1 5B9ABF61
+P 10000 1650
+F 0 "#PWR027" H 10000 1500 50  0001 C CNN
+F 1 "+5V" H 10000 1790 50  0000 C CNN
+F 2 "" H 10000 1650 50  0000 C CNN
+F 3 "" H 10000 1650 50  0000 C CNN
+	1    10000 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9150 1700 9250 1700
+Wire Wire Line
+	9250 1700 9250 1900
+Wire Wire Line
+	9250 1900 9150 1900
+Wire Wire Line
+	9250 2100 9150 2100
+Connection ~ 9250 1900
+Wire Wire Line
+	10000 1700 10000 1650
+Connection ~ 9250 1700
+Text GLabel 9250 1600 2    60   Input ~ 0
+MIDI_IN
+Wire Wire Line
+	9250 1600 9150 1600
+NoConn ~ 9150 1800
+NoConn ~ 9150 2000
+NoConn ~ 9150 2200
+NoConn ~ 9150 2300
+NoConn ~ 9150 2500
+Text GLabel 4000 6350 2    60   Input ~ 0
+~RESET
+Wire Wire Line
+	9150 2700 9250 2700
+Text GLabel 9250 2700 2    47   Input ~ 0
+~RESET
+Text GLabel 9250 2600 2    47   Input ~ 0
+AUDIO_OUT_LEFT
+Text GLabel 9250 2400 2    47   Input ~ 0
+AUDIO_OUT_RIGHT
+Wire Wire Line
+	9250 2400 9150 2400
+Wire Wire Line
+	9250 2600 9150 2600
+Wire Wire Line
+	7600 2000 7800 2000
+Wire Wire Line
+	7800 1500 7800 1600
+Wire Wire Line
+	7800 1900 7900 1900
+Wire Wire Line
+	7900 1800 7800 1800
+Connection ~ 7800 1900
+Wire Wire Line
+	7900 1700 7800 1700
+Connection ~ 7800 1800
+Wire Wire Line
+	7900 1600 7800 1600
+Connection ~ 7800 1700
+Wire Wire Line
+	7900 1500 7800 1500
+Connection ~ 7800 1600
+Wire Wire Line
+	7900 2200 7800 2200
+Wire Wire Line
+	7800 2200 7800 2300
+Wire Wire Line
+	7800 2300 7900 2300
+Wire Wire Line
+	7800 2400 7900 2400
+Connection ~ 7800 2300
+Wire Wire Line
+	7800 2500 7900 2500
+Connection ~ 7800 2400
+Wire Wire Line
+	7800 2600 7900 2600
+Connection ~ 7800 2500
+Wire Wire Line
+	7800 2700 7900 2700
+Connection ~ 7800 2600
+Connection ~ 7800 2700
+$Comp
+L cs-waveblaster-rescue:GNDA #PWR028
+U 1 1 5B9AF041
+P 7800 2800
+F 0 "#PWR028" H 7800 2550 50  0001 C CNN
+F 1 "GNDA" H 7800 2650 50  0000 C CNN
+F 2 "" H 7800 2800 50  0000 C CNN
+F 3 "" H 7800 2800 50  0000 C CNN
+	1    7800 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L cs-waveblaster-rescue:GNDD #PWR029
+U 1 1 5B9AF39D
+P 7600 2100
+F 0 "#PWR029" H 7600 1850 50  0001 C CNN
+F 1 "GNDD" H 7600 1950 50  0000 C CNN
+F 2 "" H 7600 2100 50  0000 C CNN
+F 3 "" H 7600 2100 50  0000 C CNN
+	1    7600 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 2000 7600 2100
+Connection ~ 7800 2000
+$Comp
+L cs-waveblaster-rescue:74HC04 U4
+U 1 1 5B9BBF3C
+P 3300 2600
+F 0 "U4" H 3450 2700 50  0000 C CNN
+F 1 "74HC04" H 3500 2500 50  0000 C CNN
+F 2 "Housings_DIP:DIP-14_W7.62mm" H 3300 2600 50  0001 C CNN
+F 3 "" H 3300 2600 50  0000 C CNN
+	1    3300 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L cs-waveblaster-rescue:74HC04 U4
+U 2 1 5B9BC0A8
+P 3300 3000
+F 0 "U4" H 3450 3100 50  0000 C CNN
+F 1 "74HC04" H 3500 2900 50  0000 C CNN
+F 2 "Housings_DIP:DIP-14_W7.62mm" H 3300 3000 50  0001 C CNN
+F 3 "" H 3300 3000 50  0000 C CNN
+	2    3300 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L cs-waveblaster-rescue:74HC04 U4
+U 5 1 5B9BC13D
+P 4250 3000
+F 0 "U4" H 4400 3100 50  0000 C CNN
+F 1 "74HC04" H 4450 2900 50  0000 C CNN
+F 2 "Housings_DIP:DIP-14_W7.62mm" H 4250 3000 50  0001 C CNN
+F 3 "" H 4250 3000 50  0000 C CNN
+	5    4250 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L cs-waveblaster-rescue:74HC04 U4
+U 6 1 5B9BC1BF
+P 4250 2600
+F 0 "U4" H 4400 2700 50  0000 C CNN
+F 1 "74HC04" H 4450 2500 50  0000 C CNN
+F 2 "Housings_DIP:DIP-14_W7.62mm" H 4250 2600 50  0001 C CNN
+F 3 "" H 4250 2600 50  0000 C CNN
+	6    4250 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 2600 3800 2600
+Wire Wire Line
+	3750 3000 3800 3000
+Wire Wire Line
+	2850 2600 2750 2600
+Wire Wire Line
+	2750 2600 2750 2800
+Wire Wire Line
+	2750 3000 2850 3000
+Wire Wire Line
+	1500 2800 2750 2800
+Connection ~ 2750 2800
+Wire Wire Line
+	4700 2600 4750 2600
+Wire Wire Line
+	4700 3000 4750 3000
+Text GLabel 4750 2600 2    60   Input ~ 0
+SYNTH_CLOCK
+Text GLabel 4750 3000 2    60   Input ~ 0
+DAC_CLOCK
+Text GLabel 4150 5150 0    60   Input ~ 0
+DAC_CLOCK
+Text GLabel 2750 4700 2    60   Input ~ 0
+SYNTH_CLOCK
+$Comp
+L cs-waveblaster-rescue:VCC #PWR030
+U 1 1 5B9C0CBB
+P 5100 850
+F 0 "#PWR030" H 5100 700 50  0001 C CNN
+F 1 "VCC" H 5100 1000 50  0000 C CNN
+F 2 "" H 5100 850 50  0000 C CNN
+F 3 "" H 5100 850 50  0000 C CNN
+	1    5100 850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L cs-waveblaster-rescue:GNDD #PWR031
+U 1 1 5B9C0DF8
+P 5300 1150
+F 0 "#PWR031" H 5300 900 50  0001 C CNN
+F 1 "GNDD" H 5300 1000 50  0000 C CNN
+F 2 "" H 5300 1150 50  0000 C CNN
+F 3 "" H 5300 1150 50  0000 C CNN
+	1    5300 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L cs-waveblaster-rescue:GND #PWR032
+U 1 1 5B9C0E4D
+P 5100 1150
+F 0 "#PWR032" H 5100 900 50  0001 C CNN
+F 1 "GND" H 5100 1000 50  0000 C CNN
+F 2 "" H 5100 1150 50  0000 C CNN
+F 3 "" H 5100 1150 50  0000 C CNN
+	1    5100 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 850  5100 900 
+Wire Wire Line
+	5100 900  5300 900 
+Wire Wire Line
+	5300 900  5300 850 
+Wire Wire Line
+	5100 1150 5100 1100
+Wire Wire Line
+	5100 1100 5300 1100
+Wire Wire Line
+	5300 1100 5300 1150
+$Comp
+L cs-waveblaster-rescue:CP1 C10
+U 1 1 5B9C2833
+P 5900 4700
+F 0 "C10" H 5925 4800 50  0000 L CNN
+F 1 "10u" H 5925 4600 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Radial_D5_L6_P2.5" H 5900 4700 50  0001 C CNN
+F 3 "" H 5900 4700 50  0000 C CNN
+	1    5900 4700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L cs-waveblaster-rescue:CP1 C11
+U 1 1 5B9C28E6
+P 5900 5550
+F 0 "C11" H 5925 5650 50  0000 L CNN
+F 1 "10u" H 5925 5450 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Radial_D5_L6_P2.5" H 5900 5550 50  0001 C CNN
+F 3 "" H 5900 5550 50  0000 C CNN
+	1    5900 5550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L cs-waveblaster-rescue:R R2
+U 1 1 5B9C29E8
+P 6250 4900
+F 0 "R2" V 6330 4900 50  0000 C CNN
+F 1 "2K4" V 6250 4900 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 6180 4900 50  0001 C CNN
+F 3 "" H 6250 4900 50  0000 C CNN
+	1    6250 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L cs-waveblaster-rescue:R R8
+U 1 1 5B9C2C32
+P 6250 5750
+F 0 "R8" V 6330 5750 50  0000 C CNN
+F 1 "2K4" V 6250 5750 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 6180 5750 50  0001 C CNN
+F 3 "" H 6250 5750 50  0000 C CNN
+	1    6250 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 4700 5750 4700
+Wire Wire Line
+	5550 5550 5750 5550
+Wire Wire Line
+	6250 4750 6250 4700
+Connection ~ 6250 4700
+Wire Wire Line
+	6250 5050 6250 5100
+Wire Wire Line
+	6250 5600 6250 5550
+Connection ~ 6250 5550
+Wire Wire Line
+	6250 5900 6250 5950
+$Comp
+L cs-waveblaster-rescue:GNDA #PWR033
+U 1 1 5B9C373C
+P 6250 5100
+F 0 "#PWR033" H 6250 4850 50  0001 C CNN
+F 1 "GNDA" H 6250 4950 50  0000 C CNN
+F 2 "" H 6250 5100 50  0000 C CNN
+F 3 "" H 6250 5100 50  0000 C CNN
+	1    6250 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L cs-waveblaster-rescue:GNDA #PWR034
+U 1 1 5B9C379B
+P 6250 5950
+F 0 "#PWR034" H 6250 5700 50  0001 C CNN
+F 1 "GNDA" H 6250 5800 50  0000 C CNN
+F 2 "" H 6250 5950 50  0000 C CNN
+F 3 "" H 6250 5950 50  0000 C CNN
+	1    6250 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 5550 6250 5550
+Wire Wire Line
+	6050 4700 6250 4700
+Wire Notes Line
+	5650 4450 6500 4450
+Wire Notes Line
+	6500 4450 6500 6200
+Wire Notes Line
+	6500 6200 5650 6200
+Wire Notes Line
+	5650 6200 5650 4450
+Text Notes 5800 6350 0    60   ~ 0
+AC Coupling
+$Comp
+L cs-waveblaster-rescue:+5V #PWR035
+U 1 1 5B9C6B4B
+P 5300 850
+F 0 "#PWR035" H 5300 700 50  0001 C CNN
+F 1 "+5V" H 5300 990 50  0000 C CNN
+F 2 "" H 5300 850 50  0000 C CNN
+F 3 "" H 5300 850 50  0000 C CNN
+	1    5300 850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L cs-waveblaster-rescue:+5V #PWR036
+U 1 1 5B9C6C37
+P 1000 2250
+F 0 "#PWR036" H 1000 2100 50  0001 C CNN
+F 1 "+5V" H 1000 2390 50  0000 C CNN
+F 2 "" H 1000 2250 50  0000 C CNN
+F 3 "" H 1000 2250 50  0000 C CNN
+	1    1000 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L cs-waveblaster-rescue:C C12
+U 1 1 5B9D0593
+P 5800 2800
+F 0 "C12" H 5825 2900 50  0000 L CNN
+F 1 "100n" H 5825 2700 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Disc_D3_P2.5" H 5838 2650 50  0001 C CNN
+F 3 "" H 5800 2800 50  0000 C CNN
+	1    5800 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L cs-waveblaster-rescue:+5V #PWR037
+U 1 1 5B9D0716
+P 5800 2650
+F 0 "#PWR037" H 5800 2500 50  0001 C CNN
+F 1 "+5V" H 5800 2790 50  0000 C CNN
+F 2 "" H 5800 2650 50  0000 C CNN
+F 3 "" H 5800 2650 50  0000 C CNN
+	1    5800 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L cs-waveblaster-rescue:GNDD #PWR038
+U 1 1 5B9D0778
+P 5800 2950
+F 0 "#PWR038" H 5800 2700 50  0001 C CNN
+F 1 "GNDD" H 5800 2800 50  0000 C CNN
+F 2 "" H 5800 2950 50  0000 C CNN
+F 3 "" H 5800 2950 50  0000 C CNN
+	1    5800 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 7500 1950 7500
+Wire Wire Line
+	1700 3800 2000 3800
+Wire Wire Line
+	1400 3800 1700 3800
+Wire Wire Line
+	2000 3800 2250 3800
+Wire Wire Line
+	2750 6050 2750 6100
+Wire Wire Line
+	2750 6350 3600 6350
+Wire Wire Line
+	3600 6350 3600 6400
+Wire Wire Line
+	3600 6350 4000 6350
+Wire Wire Line
+	4850 4200 4850 4350
+Wire Wire Line
+	4850 3750 4850 4200
+Wire Wire Line
+	5150 3750 5550 3750
+Wire Wire Line
+	6950 4700 7400 4700
+Wire Wire Line
+	6950 5550 7400 5550
+Wire Wire Line
+	1250 1300 1450 1300
+Wire Wire Line
+	1250 1300 1250 1400
+Wire Wire Line
+	1900 1800 1900 1850
+Wire Wire Line
+	1900 1800 2450 1800
+Wire Wire Line
+	2450 1300 2700 1300
+Wire Wire Line
+	9250 1900 9250 2100
+Wire Wire Line
+	9250 1700 10000 1700
+Wire Wire Line
+	7800 1900 7800 2000
+Wire Wire Line
+	7800 1800 7800 1900
+Wire Wire Line
+	7800 1700 7800 1800
+Wire Wire Line
+	7800 1600 7800 1700
+Wire Wire Line
+	7800 2300 7800 2400
+Wire Wire Line
+	7800 2400 7800 2500
+Wire Wire Line
+	7800 2500 7800 2600
+Wire Wire Line
+	7800 2600 7800 2700
+Wire Wire Line
+	7800 2700 7800 2800
+Wire Wire Line
+	7800 2000 7900 2000
+Wire Wire Line
+	2750 2800 2750 3000
+Wire Wire Line
+	6250 4700 6600 4700
+Wire Wire Line
+	6250 5550 6600 5550
+$EndSCHEMATC

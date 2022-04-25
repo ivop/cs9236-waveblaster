@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name cs-waveblaster-rescue)(type Legacy)(uri ${KIPRJMOD}/cs-waveblaster-rescue.lib)(options "")(descr ""))
+)
